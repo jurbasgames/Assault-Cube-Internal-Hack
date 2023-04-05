@@ -24,6 +24,9 @@
     <ClInclude Include="pch.h">
       <Filter>pre-compile</Filter>
     </ClInclude>
+    <ClInclude Include="offsets.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
