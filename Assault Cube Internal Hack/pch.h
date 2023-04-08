@@ -9,4 +9,6 @@
 
 // adicione os cabeçalhos que você deseja pré-compilar aqui
 #include "framework.h"
+#include <vector>
+#include <stdio.h>
 #endif //PCH_H

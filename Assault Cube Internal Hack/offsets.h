@@ -1,7 +1,7 @@
 // Offsets for Assault Cube 1.2.0.2
 
 #pragma once
-#include <stdio.h>
+
 /*
 Player Position XY : 0x4
 Player Position XY : 0x8
@@ -81,8 +81,16 @@ Gun Shot Dec - 5 BYTES IN FRONT
             xxxxxxxxxxxxxxxxx????
 */
 
-unsigned int ClientAddress = 0x400000;   
-unsigned int PlayerHealth = 0xF8;
-unsigned int PlayerBaseOffset = 0x109B74;
-std::vector<unsigned int> PlayerAmmo = { 0x378, 0x14, 0x0 };
-unsigned int RecoilBegin = 0x463781;
+const unsigned int ClientAddress = 0x400000;  
+const unsigned int playerX = 0x4;
+const unsigned int playerY = 0x8;
+const unsigned int playerZ = 0xC;
+const unsigned int PlayerHealth = 0xF8;
+const unsigned int PlayerBaseOffset = 0x109B74;
+const std::vector<unsigned int> PlayerAmmo = { 0x378, 0x14, 0x0 };
+const unsigned int RecoilBegin = 0x463781;
+const unsigned int entityListOffset = 0x10f4f8;
+const unsigned int totalPlayersOffset = 0x10F500;
+const unsigned int teamOffset = 0x32C;
+const unsigned int playerYaw = 0x40;
+const unsigned int playerPitch = 0x44;
