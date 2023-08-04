@@ -1,5 +1,5 @@
 <XenosConfig>
-	<imagePath>D:\1.Code\Assault-Cube-Internal-Hack\Release\Assault Cube Internal Hack.dll</imagePath>
+	<imagePath>A:\Code\Assault-Cube-Internal-Hack\Release\Assault Cube Internal Hack.dll</imagePath>
 	<manualMapFlags>0</manualMapFlags>
 	<procName>ac_client.exe</procName>
 	<hijack>0</hijack>

@@ -1,9 +1,6 @@
 #include "pch.h"
 #include "mem.h"
-#include <windows.h>
 #include <iostream>
-#include <vector>
-#include <stdio.h>
 
 	uintptr_t mem::FindDMAAddy(uintptr_t pointer, std::vector<unsigned int> offsets) {
 		uintptr_t addr = pointer;

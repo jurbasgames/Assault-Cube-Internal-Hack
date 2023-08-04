@@ -1,9 +1,5 @@
 #pragma once
-#include "pch.h"
-#include <windows.h>
 #include <iostream>
-#include <vector>
-#include <stdio.h>
 
 namespace mem
 {
