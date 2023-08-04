@@ -41,8 +41,7 @@ DWORD WINAPI HackThread(HMODULE hModule)
     AllocConsole();
     FILE* f;
     freopen_s(&f, "CONOUT$", "w", stdout);
-
-    uintptr_t moduleBase = (uintptr_t)GetModuleHandle(L"ac_client.exe");
+    uintptr_t moduleBase;
 
     //calling it with NULL also gives you the address of the .exe module
     moduleBase = (uintptr_t)GetModuleHandle(NULL);

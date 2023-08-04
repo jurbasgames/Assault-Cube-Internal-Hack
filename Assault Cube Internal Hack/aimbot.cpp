@@ -9,14 +9,14 @@
 # define M_PI           3.14159265358979323846  /* pi */
 
 std::vector<float> aim::getNearEnemyPos(uintptr_t localPlayerPtr, uintptr_t entityList, int totalPlayers) {
-	unsigned int i;
+	int i;
 	std::vector<float> playerPos = { *(float*)mem::FindDMAAddy((uintptr_t)localPlayerPtr, { playerX}) ,*(float*)mem::FindDMAAddy((uintptr_t)localPlayerPtr, { playerY }) ,*(float*)mem::FindDMAAddy((uintptr_t)localPlayerPtr, { playerZ }) };
 	int playerTeam = *(int*)mem::FindDMAAddy((uintptr_t)localPlayerPtr, { teamOffset });
 	std::vector<float> target = {}; // define a default position for the target
 	float minDistance = std::numeric_limits<float>::infinity(); // define a very large default distance
 
 	for (i = 1; i <= totalPlayers; i++) {
-		uintptr_t enemy = mem::FindDMAAddy(entityList, { 0x4 * i });
+		uintptr_t enemy = mem::FindDMAAddy(entityList, { (unsigned int)(0x4 * i) });
 		int enemyHealth = *(int*)mem::FindDMAAddy((uintptr_t)enemy, { PlayerHealth });
 		int enemyTeam = *(int*)mem::FindDMAAddy((uintptr_t)enemy, { teamOffset });
 
